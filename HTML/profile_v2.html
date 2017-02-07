@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>			
+		
+	<head>
+		<title>JP Horsfield - About Me</title>
+		<meta charset="utf-8" />
+		<!-- I'm including this to manage the size of different display devices - combined with media queries in the CSS file -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- External style sheet being used for this homework assignment -->
+		<link rel="stylesheet" type="text/css" href="../CSS/homework_1_v2.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/jquery-ui.css">
+  		<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+		<!-- Importing some fonts from Google -->
+		<link href="https://fonts.googleapis.com/css?family=Bangers|Oswald|Raleway|Josefin Slab" rel="stylesheet">
+		<!-- jQuery librairies to support the accordian function - used to list skills section -->
+		<!-- I want to use the accordion function to minimise use of real estate for that section, would look to dense otherwise -->
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  		<script>
+  			$( function() {
+    			$( "#accordion" ).accordion({
+      				icons: { "header": "ui-icon-triangle-1-e", "activeHeader": "ui-icon-triangle-1-s" },
+      				collapsible: true,
+      				event: "mouseover",
+      				active: false
+    				});
+    		 } );
+  		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>				
+					<img src="../IMAGES/second_logo2.png" alt="My logo" width='100%' height='100%' class='logo'>
+				<nav>
+					<ul>
+						<li><a href="./profile_v2.html">about</a></li>
+						<li><a href="./portfolio.html">portfolio</a></li>
+						<li><a href="https://www.google.co.uk">news</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="bio">
+				<article>
+					<figure>
+						<img src="../IMAGES/bnw_portrait.jpg" alt="JP Horsfield">
+					</figure>
+					<h1>My Developing Life</h1>
+					<p>I'm JP Horsfield, I live and work in London and am currently developing my skills in creating responsive websites.</p>
+					<p>I use Affinity Designer and Sublime Text for development tools as well as MacDown, CodePen and JSFiddle.</p>
+				</article>   
+			</section>
+			<aside>
+				<section class="skills">
+					<h2>Skills in development</h2>
+						<div id="accordion">
+						  <h3>HTML</h3>
+						  <div>
+						    <img src="../IMAGES/html5.png" alt="HTML5 Logo">
+						  </div>
+						  <h3>CSS</h3>
+						  <div>
+						    <img src="../IMAGES/css3.png" alt="CSS3Logo">
+						  </div>
+						  <h3>jQuery</h3>
+						  <div>
+						    <img src="../IMAGES/jquery.png" alt="jQuery Logo">
+						  </div>
+						  <h3>jQuery UI</h3>
+						  <div>
+						    <img src="../IMAGES/jqueryui.png" alt="jQuery UI Logo">
+						  </div>
+						  <h3>JavaScript</h3>
+						  <div>
+						    <img src="../IMAGES/js.png" alt="JavaScript Logo">
+						  </div>
+						</div>
+				</section>
+				<section class="contact">
+					<h2>Contact me</h2>
+					<p></p>
+					<ul>
+						<li><a href="https://twitter.com/jphorsfield"><img src="../IMAGES/twitter-icon-71.png"></a></li>
+						<li><a href="https://www.facebook.com/jp.horsfield"><img src="../IMAGES/fb-art.png"></a></li>
+						<li><a href="https://www.linkedin.com/in/jphorsfield/"><img src="../IMAGES/linkedin-512.png"></a></li>
+					</ul>
+				</section>
+			</aside>
+			<footer>
+				&copy; 2017 - JP Horsfield
+			</footer>			
+				
+		</div>
+	</body>
+</html>
